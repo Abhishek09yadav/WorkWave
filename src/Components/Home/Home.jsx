@@ -20,15 +20,17 @@ const Home = () => {
 
             <JobCategory category={category}/>
             <div className="search-container">
+                <h2 className="search-label">Search:</h2>
                 <img src={searchimg} alt="" className="small-img"/>
                 <input
                     type="text"
-                    placeholder="Search jobs by Job Title   "
+                    placeholder="Search jobs by Job Title"
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
-                    className="border p-2 rounded mb-4"
+                    className="styled-input"
                 />
             </div>
+
             <JobSection searchTerm={searchTerm}/>
             <Footer/>
         </div>
