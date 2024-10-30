@@ -24,7 +24,7 @@ const Home = () => {
                 <img src={searchimg} alt="" className="small-img"/>
                 <input
                     type="text"
-                    placeholder="Search jobs by Job Title"
+                    placeholder="Search Job Title eg. Software Engineer "
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
                     className="styled-input"
